@@ -1,0 +1,96 @@
+/*中间内容开始*/
+.content-box .section:nth-of-type(1) .info p {
+  margin-top: 0;
+  font-size: 30px;
+}
+.content-box .section:nth-of-type(1) .info span {
+  width: 80px;
+  height: 3px;
+  background: #666;
+}
+.content-box .section:nth-of-type(1) .info i {
+  font-size: 25px;
+}
+.content-box .section:nth-of-type(1) div:nth-of-type(2) p {
+  margin: 10px auto 0;
+  font-size: 12px;
+}
+.content-box .section:nth-of-type(1) .design {
+  height: 150px;
+  background-position: 0;
+}
+.content-box .section:nth-of-type(1) > p:last-child {
+  bottom: 30px;
+  font-size: 32px;
+}
+.content-box .section:nth-of-type(2) {
+  font-size: 30px;
+}
+.content-box .section:nth-of-type(2) p span {
+  width: 80px;
+  height: 3px;
+}
+.content-box .section:nth-of-type(2) p .icon-h5 {
+  font-size: 60px;
+}
+.content-box .section:nth-of-type(2) .swiper-container {
+  width: 70%;
+  height: 230px;
+}
+.content-box .section:nth-of-type(2) .swiper-container .swiper-slide .icon-skill {
+  font-size: 70px;
+}
+.content-box .section:nth-of-type(2) .swiper-container .swiper-slide p {
+  padding-top: 20px;
+  font-size: 20px;
+}
+.content-box .section:nth-of-type(3) p:first-child {
+  font-size: 30px;
+}
+.content-box .section:nth-of-type(3) p:nth-of-type(2) span {
+  width: 80px;
+  height: 3px;
+}
+.content-box .section:nth-of-type(3) p:nth-of-type(2) .icon-skill2 {
+  font-size: 70px;
+}
+.content-box .section:nth-of-type(3) .am-tabs {
+  width: 50%;
+}
+.content-box .section:nth-of-type(3) .am-tabs .am-tab-panel {
+  font-size: 12px;
+}
+.content-box .section:nth-of-type(4) {
+  padding-bottom: 50px;
+  margin-bottom: 0;
+  background: #353441;
+}
+.content-box .section:nth-of-type(4) p {
+  color: #fff;
+  font-size: 35px;
+}
+.content-box .section:nth-of-type(4) .Hello {
+  position: relative;
+  margin: 20px auto 0;
+  width: 150px;
+  height: 150px;
+}
+.content-box .section:nth-of-type(4) .Hello .hello-logo {
+  width: 100px;
+}
+@keyframes borderClip {
+  0%,
+  100% {
+    clip: rect(0px, 180px, 2px, 0px);
+  }
+  25% {
+    clip: rect(0px, 2px, 180px, 0px);
+  }
+  50% {
+    clip: rect(178px, 180px, 180px, 0px);
+  }
+  75% {
+    clip: rect(0px, 180px, 180px, 178px);
+  }
+}
+/*中间内容结束*/

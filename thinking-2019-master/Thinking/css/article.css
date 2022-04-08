@@ -1,0 +1,98 @@
+/*富文本内容修正+代码修饰器开始*/
+.layui-code-view .layui-code-ol li {
+  font-size: 15px;
+  margin-left: 40px !important;
+}
+.article-container-content table {
+  border: none;
+  width: 100%;
+  padding: 0;
+  border-top: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+  margin: 10px 0;
+  line-height: 1.5;
+}
+.article-container-content table th {
+  border-bottom: 2px solid #ccc;
+  border-right: 1px solid #ccc;
+  text-align: center;
+  display: table-cell;
+  vertical-align: inherit;
+}
+.article-container-content table td {
+  border-bottom: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  padding: 3px 5px;
+}
+blockquote {
+  display: block;
+  padding: 5px 6px;
+  margin: 0 10px;
+  border-left: 5px solid #006cff;
+  background: #f1f1f1;
+}
+/*富文本内容修正+代码修饰器结束*/
+/*文章内容开始*/
+.article-container {
+  width: 100%;
+}
+.article-container .article-title {
+  padding-top: 20px;
+  text-align: center;
+  margin-bottom: 0;
+  padding-bottom: 80px;
+}
+.article-container .article-title h1 {
+  font-size: 28px;
+}
+.article-container .article-title p.info {
+  margin: 0;
+}
+.article-container .article-title p.info i {
+  font-size: 14px;
+  margin: 0 10px;
+}
+.article-container .article-container-content {
+  width: 100%;
+}
+.article-container .article-container-content ul li {
+  list-style-position: inside;
+  list-style-type: circle;
+}
+.article-container .article-container-content ol li {
+  list-style-position: inside;
+  list-style-type: decimal;
+}
+.article-container .article-container-content .layui-code-view .layui-code-h3 {
+  margin-bottom: 1px;
+}
+.article-container .article-container-content .layui-code-view ul li {
+  list-style-position: outside;
+}
+.article-container .article-container-content .layui-code-view ol {
+  padding-left: 0;
+  margin: 0;
+}
+.article-container .article-container-content .layui-code-view ol li {
+  list-style-position: outside;
+}
+/*文章内容结束*/
+/*文章导航开始*/
+.article-nav {
+  width: 100%;
+  height: 110px;
+  display: flex;
+  justify-content: space-around;
+}
+.article-nav > div p {
+  text-align: center;
+}
+.article-nav > div a {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+}
+.article-nav > div a:hover {
+  color: #006cff;
+}
+/*文章导航结束*/
