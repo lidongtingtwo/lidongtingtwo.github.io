@@ -1,0 +1,113 @@
+/*中间内容开始*/
+.content-box{
+    .section:nth-of-type(1){
+        .info{
+            p{
+                margin-top: 0;
+                font-size: 30px;
+            }
+            span{
+                width: 80px;
+                height: 3px;
+                background: #666;
+            }
+            i{
+                font-size:25px;
+            }
+        }
+        div:nth-of-type(2){
+            p{
+                margin: 10px auto 0;
+                font-size: 12px;
+            }
+        }
+        .design{
+            height: 150px;
+            background-position: 0;
+        }
+        >p:last-child{
+            bottom: 30px;
+            font-size: 32px;
+        }
+    }
+    .section:nth-of-type(2){
+        font-size: 30px;
+        p{
+            span{
+                width: 80px;
+                height: 3px;
+            }
+            .icon-h5{
+                font-size: 60px;
+            }
+        }
+        .swiper-container {
+            width:70%;
+            height: 230px;
+            .swiper-slide {
+                .icon-skill{
+                    font-size: 70px;
+                }
+                p:extend(.c6){
+                    padding-top: 20px;
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+    .section:nth-of-type(3){
+        p{
+            &:first-child{
+                font-size: 30px;
+            }
+            &:nth-of-type(2){
+                span{
+                    width: 80px;
+                    height: 3px;
+                }
+                .icon-skill2{
+                    font-size: 70px;
+                }
+            }
+        }
+        .am-tabs{
+            width: 50%;
+            .am-tab-panel{
+                font-size: 12px;
+            }
+        }
+    }
+    .section:nth-of-type(4){
+        padding-bottom: 50px;
+        margin-bottom: 0;
+        background: rgb(53, 52, 65);
+        p{
+            color: #fff;
+            font-size: 35px;  
+        }
+        .Hello{
+            position: relative;
+            margin:20px auto 0;
+            width: 150px;
+            height: 150px;
+            .hello-logo{
+                width: 100px;
+            }
+        }
+    }
+}
+@keyframes borderClip{
+    0%,100%{
+        clip:rect(0px,180px,2px,0px);
+    }
+    25%{
+        clip:rect(0px,2px,180px,0px);
+    }
+    50%{
+        clip:rect(178px,180px,180px,0px);
+    }
+    75%{
+        clip:rect(0px,180px,180px,178px);
+    }
+}
+/*中间内容结束*/

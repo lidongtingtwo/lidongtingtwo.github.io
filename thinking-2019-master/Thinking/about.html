@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!--主页通用的css与js开始-->
+		<link rel="stylesheet" href="font/iconfont.css" />
+		<link rel="stylesheet" href="css/amazeui.min.css" />
+		<link rel="stylesheet" href="css/index.css" />
+		<link rel="stylesheet" href="css/index-pad.css" media="screen and (max-width:1200px)" />
+		<link rel="stylesheet" href="css/index-phone.css" media="screen and (max-width:768px)" />
+		<link rel="icon" href="favicon.ico" type="image/x-icon"/>
+		<!--主页通用的css与js结束-->
+		<title>Thinking — 关于</title>
+		<link rel="stylesheet" href="css/swiper.min.css" />
+		<link rel="stylesheet" href="wow/css/animate.min.css" />
+		<link rel="stylesheet" href="css/about.css" />
+		<link rel="stylesheet" href="css/about-pad.css" media="screen and (max-width:1200px)" />
+		<link rel="stylesheet" href="css/about-phone.css" media="screen and (max-width:768px)" />
+	</head>
+	<body>
+		<!--顶部开始-->
+		<div class="header">
+			<div class="header-top">
+				<!--手机侧边栏开始-->
+				<!-- 按钮触发器， 需要指定 target -->
+				<button class="am-btn am-btn-primary" data-am-offcanvas="{target: '#doc-oc-demo2', effect: 'push'}"><i class="iconfont icon-toggle"></i></button>
+				<!-- 侧边栏内容 -->
+				<div id="doc-oc-demo2" class="am-offcanvas">
+				  <div class="am-offcanvas-bar">
+				    <div class="am-offcanvas-content">
+				    	<ul>
+				    		<li>
+								<a href="index.html" class="menu-text iconfont icon-icon-system-home turn">主页</a>
+							</li>
+							<li>
+								<a href="about.html" class="menu-text iconfont icon-guanyu turn">关于</a>
+							</li>
+							<li>
+								<a href="JavaScript:" class="menu-text iconfont icon-lianjie turn" onclick="layer.msg('暂未开放',{time:1500});">友联</a>
+							</li>
+				    	</ul>
+				    	<div class="am-panel-group" id="accordion">
+						  <div class="am-panel am-panel-default">
+						    <div class="am-panel-hd">
+						      <h4 class="am-panel-title" data-am-collapse="{parent: '#accordion', target: '#do-not-say-3'}">主题切换</h4>
+						    </div>
+						    <div id="do-not-say-3" class="am-panel-collapse am-collapse">
+						      <div class="am-panel-bd">
+						        <div class="theme-box">
+							  		<a href="JavaScript:" class="iconfont icon-baitian theme-mode3-toggle"></a>
+							  		<a href="JavaScript:" class="iconfont icon-yejian theme-mode4-toggle"></a>
+							  		<a href="JavaScript:" data-bgimg='images/bg2.png' class="iconfont icon-huaban theme-toggle"></a>
+							  		<a href="JavaScript:" data-bgimg='images/bg3.gif' class="iconfont icon-bizhitabbarxxhdpi theme-toggle"></a>
+							  		<a href="JavaScript:" data-bgimg='images/bg6.png' class="iconfont icon-bizhi theme-toggle"></a>
+							  		<a href="JavaScript:" data-bgimg='images/bg4.png' class="iconfont icon-qingxin theme-toggle"></a>
+							  		<a href="JavaScript:" data-bgimg='images/bg5.png' class="iconfont icon-QCC- theme-toggle"></a>
+							  		<a href="JavaScript:" data-bgimg='images/bg1.jpg' class="iconfont icon-gezi theme-toggle"></a>
+							  	</div>
+						      </div>
+						    </div>
+						  </div>
+						</div>
+				    </div>
+				  </div>
+				</div>
+				<!--手机侧边栏结束-->
+				<a href="index.html" class="turn topLogo"><img src="images/toplogo.svg" alt="" /></a>
+			</div>
+			<div class="header-center">
+				<img src="images/headLogo.jpg" class="user-logo"  title="关于我" />
+				<p class="user-name">南先生</p>
+				<p>Every 🐦 has an 🦅's dream.</p>
+			</div>
+			<div class="header-bottom">
+				<a href="index.html" class="turn"><img src="favicon.ico" alt="" class="menu-logo"/></a>
+				<ul class="header-nav">
+					<li>
+						<a href="index.html" class="menu-text iconfont icon-icon-system-home turn">主页</a>
+						<div class="selected">
+							<span></span>
+						</div>
+					</li>
+					<li>
+						<a href="about.html" class="menu-text iconfont icon-guanyu turn">关于</a>
+						<div class="selected">
+							<span></span>
+						</div>
+					</li>
+					<li>
+						<a href="JavaScript:" class="menu-text iconfont icon-lianjie turn" onclick="layer.msg('暂未开放',{time:1500});">友链</a>
+						<div class="selected">
+							<span></span>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!--顶部结束-->
+		<!--中间内容开始-->
+		<div id="main-container">
+			<div id="main">
+				<div class="content">
+					<div class="content-box">
+						<div class="section">
+							<div class="info">
+								<p>Idea</p>
+								<span></span>
+								<i class="iconfont icon-xiangfa"></i>
+								<span></span>
+							</div>
+							<div>
+								<p>记录生活，在自己的每一天上留下思考的划痕。</p>
+								<p>整理思路，固化知识，获得更多更好的想法。</p>
+								<p>分享，将自己的想法、经验与人分享。</p>
+							</div>
+							<div class="design">
+							</div>
+							<p>Design comes from life</p>
+						</div>
+						<div class="section">
+							Skills stack of this website
+							<p>
+								<span></span>
+								<svg class="icon icon-h5" aria-hidden="true">
+								  <use xlink:href="#icon-h5"></use>
+								</svg>
+								<span></span>
+							</p>
+							<!-- Swiper -->
+							<div class="swiper-container">
+							    <div class="swiper-wrapper">
+							      <div class="swiper-slide">
+							      	<svg class="icon icon-skill" aria-hidden="true">
+									  <use xlink:href="#icon-jquery"></use>
+									</svg>
+									<p>25%</p>
+							      </div>
+							      <div class="swiper-slide">
+							      	<svg class="icon icon-skill" aria-hidden="true">
+									  <use xlink:href="#icon-ziyuan"></use>
+									</svg>
+									<p>20%</p>
+							      </div>
+							      <div class="swiper-slide">
+							      	<svg class="icon icon-skill" aria-hidden="true">
+									  <use xlink:href="#icon-tubiaozhizuomoban"></use>
+									</svg>
+									<p>20%</p>
+							      </div>
+							      <div class="swiper-slide">
+							      	<svg class="icon icon-skill" aria-hidden="true">
+									  <use xlink:href="#icon-php"></use>
+									</svg>
+									<p>25%</p>
+							      </div>
+							      <div class="swiper-slide">
+							      	<svg class="icon icon-skill" aria-hidden="true">
+									  <use xlink:href="#icon-amazeui"></use>
+									</svg>
+									<p>10%</p>
+							      </div>
+							    </div>
+							    <!-- Add Pagination -->
+								<div class="swiper-pagination"></div>
+							</div>
+						</div>
+						<div class="section section3">
+							<p>Characteristic</p>
+							<p>
+								<span></span>
+								<svg class="icon icon-skill2" aria-hidden="true">
+								  <use xlink:href="#icon-jishu"></use>
+								</svg>
+								<span></span>
+							</p>
+						    <div data-am-widget="intro" class="wow slideInLeft am-intro am-cf am-intro-default am-tabs">
+							        <div data-am-widget="titlebar" class="am-titlebar am-titlebar-default" >
+									    <h2 class="am-titlebar-title ">
+									        界面
+									    </h2>
+									</div>
+							    	<div class="am-tab-panel">
+								        Thinking是一个简洁的博客站点，整体很小清新，选择了极简主义的“扁平化”+“响应式”设计风格，如果你正在寻找一款比较文艺小清新的博客，不妨好好体验一下本站点吧。
+							    	</div>
+						  	</div>
+						  	<div data-am-widget="intro" class="wow slideInLeft am-intro am-cf am-intro-default am-tabs">
+							        <div data-am-widget="titlebar" class="am-titlebar am-titlebar-default" >
+									    <h2 class="am-titlebar-title ">
+									       	 小工具
+									    </h2>
+									</div>
+							    	<div class="am-tab-panel">
+								        本站集成了一些小功能比如说音乐播放器，主题切换之类的，后续还会持续更新一些小组件
+							    	</div>
+						  	</div>
+						  	<div data-am-widget="intro" class="wow slideInLeft am-intro am-cf am-intro-default am-tabs">
+							        <div data-am-widget="titlebar" class="am-titlebar am-titlebar-default" >
+									    <h2 class="am-titlebar-title ">
+									        Pjax全站刷新
+									    </h2>
+									</div>
+							    	<div class="am-tab-panel">
+								        pjax是对ajax + pushState的封装,本站采用了Pjax技术实现了全站无刷新加载切换整个页面
+							    	</div>
+						  	</div>
+						</div>
+						<div class="section section4">
+							<p>Hello Thinking!</p>
+							<div class="Hello">
+								<img src="images/logo.svg" class="hello-logo" alt="" />
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--中间内容结束-->
+		<!--底部开始-->
+		<div class="footer">
+			<p>Thinking &copy; 2019</p>
+		</div>
+		<!--底部结束-->
+		<!--小工具部分开始-->
+		<!--主题切换开始-->
+		<div class="am-dropdown am-dropdown-up" data-am-dropdown>
+		  <button class="am-btn am-btn-danger am-dropdown-toggle" data-am-dropdown-toggle><i class="iconfont icon-wsmp-theme"></i>主题切换</button>
+		  <div class="am-dropdown-content">
+		  	<div class="theme-box">
+		  		<a href="JavaScript:" class="iconfont icon-baitian theme-mode1-toggle" title="白天模式"></a>
+		  		<a href="JavaScript:" class="iconfont icon-yejian theme-mode2-toggle" title="夜间模式"></a>
+		  		<a href="JavaScript:" data-bgimg='images/bg2.png' title="小碎花" class="iconfont icon-huaban theme-toggle"></a>
+		  		<a href="JavaScript:" data-bgimg='images/bg3.gif' title="小碎点" class="iconfont icon-bizhitabbarxxhdpi theme-toggle"></a>
+		  		<a href="JavaScript:" data-bgimg='images/bg6.png' title="波浪" class="iconfont icon-bizhi theme-toggle"></a>
+		  		<a href="JavaScript:" data-bgimg='images/bg4.png' title="小清新" class="iconfont icon-qingxin theme-toggle"></a>
+		  		<a href="JavaScript:" data-bgimg='images/bg5.png' title="小星星" class="iconfont icon-QCC- theme-toggle"></a>
+		  		<a href="JavaScript:" data-bgimg='images/bg1.jpg' title="小方格" class="iconfont icon-gezi theme-toggle"></a>
+		  	</div>
+		  </div>
+		</div>
+		<!--主题切换结束-->
+		<!--返回顶部开始-->
+	  	<div data-am-widget="gotop" class="am-gotop am-gotop-default">
+	    	<a href="#top" title="回到顶部">
+	      	  <span class="am-gotop-title">
+	      	  	<i class="iconfont icon-dingbu"></i>
+	      	  </span>
+	    	</a>
+	  	</div>
+		<!--返回顶部结束-->
+		<!--小工具部分结束-->
+		<!--引入页面间功能-->
+		<script src="./font/iconfont.js"></script>
+		<script type="text/javascript" src="./js/jquery-3.3.1.js"></script>
+		<script type="text/javascript" src="./js/amazeui.min.js"></script>
+		<script type="text/javascript" src="./js/tools.js"></script>
+		<script type="text/javascript" src="./js/anime.min.js"></script>
+		<script src="./js/swiper.min.js"></script>
+		<script src="./layer/layer.js"></script>
+		<script src="./wow/js/wow.min.js"></script>
+		<script type="text/javascript" src="./js/public.js"></script>
+	</body>
+	<script>
+		window.addEventListener('load', function(){
+			new Load(['about'])
+		})
+	</script>
+</html>

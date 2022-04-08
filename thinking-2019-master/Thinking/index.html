@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!--主页需要用到的css-->
+		<link rel="stylesheet" href="font/iconfont.css" />
+		<link rel="stylesheet" href="css/amazeui.min.css" />
+		<link rel="stylesheet" href="css/index.css" />
+		<link rel="stylesheet" href="css/index-pad.css" media="screen and (max-width:1200px)" />
+		<link rel="stylesheet" href="css/index-phone.css" media="screen and (max-width:768px)" />
+		<link rel="icon" href="favicon.ico" type="image/x-icon"/>
+		<title>Thinking — 享你所想</title>
+		<meta name="keywords" content="前端博客,前端,博客分享,博客教程,学习经验,分享,JavaScript分享"/>
+		<meta name="description" content="Thinking是一个开源的个人博客，记录生活，在自己的每一天上留下思考的划痕。整理思路，固化知识，获得更多更好的想法。将自己的想法、经验与人分享">
+	</head>
+	<body>
+		<!--顶部开始-->
+		<div class="header">
+			<div class="header-top">
+				<!--手机侧边栏开始-->
+				<!-- 按钮触发器， 需要指定 target -->
+				<button class="am-btn am-btn-primary" data-am-offcanvas="{target: '#doc-oc-demo2', effect: 'push'}"><i class="iconfont icon-toggle"></i></button>
+				<!-- 侧边栏内容 -->
+				<div id="doc-oc-demo2" class="am-offcanvas">
+				  <div class="am-offcanvas-bar">
+				    <div class="am-offcanvas-content">
+				    	<ul>
+				    		<li>
+								<a href="index.html" class="menu-text iconfont icon-icon-system-home turn">主页</a>
+							</li>
+							<li>
+								<a href="about.html" class="menu-text iconfont icon-guanyu turn">关于</a>
+							</li>
+							<li>
+								<a href="JavaScript:" class="menu-text iconfont icon-lianjie turn" onclick="layer.msg('暂未开放',{time:1500});">友联</a>
+							</li>
+				    	</ul>
+				    	<div class="am-panel-group" id="accordion">
+						  <div class="am-panel am-panel-default">
+						    <div class="am-panel-hd">
+						      <h4 class="am-panel-title" data-am-collapse="{parent: '#accordion', target: '#do-not-say-3'}">主题切换</h4>
+						    </div>
+						    <div id="do-not-say-3" class="am-panel-collapse am-collapse">
+						      <div class="am-panel-bd">
+						        <div class="theme-box">
+							  		<a href="JavaScript:" class="iconfont icon-baitian theme-mode3-toggle"></a>
+							  		<a href="JavaScript:" class="iconfont icon-yejian theme-mode4-toggle"></a>
+							  		<a href="JavaScript:" data-bgimg='images/bg2.png' class="iconfont icon-huaban theme-toggle"></a>
+							  		<a href="JavaScript:" data-bgimg='images/bg3.gif' class="iconfont icon-bizhitabbarxxhdpi theme-toggle"></a>
+							  		<a href="JavaScript:" data-bgimg='images/bg6.png' class="iconfont icon-bizhi theme-toggle"></a>
+							  		<a href="JavaScript:" data-bgimg='images/bg4.png' class="iconfont icon-qingxin theme-toggle"></a>
+							  		<a href="JavaScript:" data-bgimg='images/bg5.png' class="iconfont icon-QCC- theme-toggle"></a>
+							  		<a href="JavaScript:" data-bgimg='images/bg1.jpg' class="iconfont icon-gezi theme-toggle"></a>
+							  	</div>
+						      </div>
+						    </div>
+						  </div>
+						</div>
+				    </div>
+				  </div>
+				</div>
+				<!--手机侧边栏结束-->
+				<a href="index.html" class="turn topLogo"><img src="images/toplogo.svg" alt="" /></a>
+			</div>
+			<div class="header-center">
+				<img src="images/headLogo.jpg" class="user-logo" title="关于我" />
+				<p class="user-name">南先生</p>
+				<p>Every 🐦 has an 🦅's dream.</p>
+			</div>
+			<div class="header-bottom">
+				<a href="index.html" class="turn"><img src="favicon.ico" alt="" class="menu-logo"/></a>
+				<ul class="header-nav">
+					<li>
+						<a href="index.html" class="menu-text iconfont icon-icon-system-home turn">主页</a>
+						<div class="selected">
+							<span></span>
+						</div>
+					</li>
+					<li>
+						<a href="about.html" class="menu-text iconfont icon-guanyu turn">关于</a>
+						<div class="selected">
+							<span></span>
+						</div>
+					</li>
+					<li>
+						<a href="JavaScript:" class="menu-text iconfont icon-lianjie turn" onclick="layer.msg('暂未开放',{time:1500});">友链</a>
+						<div class="selected">
+							<span></span>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!--顶部结束-->
+		
+		<!--中间内容开始-->
+		<div id="main-container">
+			<div id="main">
+				<div class="content">
+					<div class="background-box">
+						<!--上方介绍开始-->
+						<div class="introduce">
+							<p class="welcome">
+								<svg class="icon icon-huanying" aria-hidden="true">
+								  <use xlink:href="#icon-huanying"></use>
+								</svg>
+								欢迎来到鄙人的小破站,各位大佬手下留情,谢谢~
+							</p>
+							<p>
+								<i class="iconfont icon-shuben"></i>
+								探索
+							</p>
+						</div>
+						<!--上方介绍结束-->
+						<!--文章项-->
+						<div class="article">
+							<div class="article-left">
+								<h2><a href="article.html?p=1" class="page">Thinking博客技术栈总结</a></h2>
+								<p>
+									<span class="iconfont icon-liulan">
+										访问量:222
+									</span>
+									<span class="iconfont icon-iconwangge-">
+										学习
+									</span>
+								</p>
+								<div class="main-content">
+									在初次的界面设计中，参考了很多博客技术栈，参看他们搭建的博客网站是怎样的。结合自己的一些想法最终制作完成。
+								</div>
+								<p>
+									<i class="iconfont icon-shijian"></i>
+									发布于:2019-6-23
+								</p>
+								<p>
+									<a href="article.html?p=1" class="page"><i class="iconfont icon-gengduo-copy"></i></a>
+								</p>
+							</div>
+							<div class="article-right">
+								<a href="article.html?p=1" class="page"><img src="images/banner3.jpg" alt="" /></a>
+							</div>
+						</div>
+						<div class="article">
+							<div class="article-left">
+								<h2><a href="article.html?p=1" class="page">JavaScript对象深拷贝</a></h2>
+								<p>
+									<span class="iconfont icon-liulan">
+										访问量:233
+									</span>
+									<span class="iconfont icon-iconwangge-">
+										JavaScript
+									</span>
+								</p>
+								<div class="main-content">
+									
+												对象深拷贝第一种:let obj1 = {
+	name : "chen",
+	age : 20
+}
+let obj2 = new Object();
+obj2.name = obj1.name;
+obj2.age = obj1.age;
+obj2.name = "zs";
+console
+											
+								</div>
+								<p>
+									<i class="iconfont icon-shijian"></i>
+									发布于:2019-5-17
+								</p>
+								<p>
+									<a href="article.html?p=1" class="page"><i class="iconfont icon-gengduo-copy"></i></a>
+								</p>
+							</div>
+							<div class="article-right">
+								<a href="article.html?p=1" class="page"><img src="images/banner.png" alt="" /></a>
+							</div>
+						</div>
+						<div class="article">
+							<div class="article-left">
+								<h2><a href="article.html?p=1" class="page">Animejs笔记</a></h2>
+								<p>
+									<span class="iconfont icon-liulan">
+										访问量:128
+									</span>
+									<span class="iconfont icon-iconwangge-">
+										JavaScript
+									</span>
+								</p>
+								<div class="main-content">
+									
+												官网文档github官方文档中文文档兼容性ChromeSafariIE / EdgeFirefoxOpera24+8+11+32+15+安装$ npm install animejs
+# OR
+$ bower install animejs
+引
+											
+								</div>
+								<p>
+									<i class="iconfont icon-shijian"></i>
+									发布于:2019-5-17
+								</p>
+								<p>
+									<a href="article.html?p=1" class="page"><i class="iconfont icon-gengduo-copy"></i></a>
+								</p>
+							</div>
+							<div class="article-right">
+								<a href="article.html?p=1" class="page"><img src="images/articleBg.jpg" alt="" /></a>
+							</div>
+						</div>
+						<div class="article">
+							<div class="article-left">
+								<h2><a href="article.html?p=1" class="page">离天空最近的地方，是儿时爸爸的肩膀</a></h2>
+								<p>
+									<span class="iconfont icon-liulan">
+										访问量:128
+									</span>
+									<span class="iconfont icon-iconwangge-">
+										父亲节
+									</span>
+								</p>
+								<div class="main-content">
+									父亲节父亲节（Father’s Day），顾名思义是感恩父亲的节日。约始于二十世纪初，起源于美国，现已广泛流传于世界各地
+								</div>
+								<p>
+									<i class="iconfont icon-shijian"></i>
+									发布于:2019-5-17
+								</p>
+								<p>
+									<a href="article.html?p=1" class="page"><i class="iconfont icon-gengduo-copy"></i></a>
+								</p>
+							</div>
+							<div class="article-right">
+								<a href="article.html?p=1" class="page"><img src="images/banner2.jpg" alt="" /></a>
+							</div>
+						</div>
+					</div>
+					<div id="getmore">					
+						<div class="load-more-btn">加载更多</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--中间内容结束-->
+		<!--底部开始-->
+		<div class="footer">
+			<p>Thinking &copy; 2019</p>
+		</div>
+		<!--底部结束-->
+		<!--小工具部分开始-->
+		<!--主题切换开始-->
+		<div class="am-dropdown am-dropdown-up" data-am-dropdown>
+		  <button class="am-btn am-btn-danger am-dropdown-toggle" data-am-dropdown-toggle><i class="iconfont icon-wsmp-theme"></i>主题切换</button>
+		  <div class="am-dropdown-content">
+		  	<div class="theme-box">
+		  		<a href="JavaScript:" class="iconfont icon-baitian theme-mode1-toggle" title="白天模式"></a>
+		  		<a href="JavaScript:" class="iconfont icon-yejian theme-mode2-toggle" title="夜间模式"></a>
+		  		<a href="JavaScript:" data-bgimg='images/bg2.png' title="小碎花" class="iconfont icon-huaban theme-toggle"></a>
+		  		<a href="JavaScript:" data-bgimg='images/bg3.gif' title="小碎点" class="iconfont icon-bizhitabbarxxhdpi theme-toggle"></a>
+		  		<a href="JavaScript:" data-bgimg='images/bg6.png' title="波浪" class="iconfont icon-bizhi theme-toggle"></a>
+		  		<a href="JavaScript:" data-bgimg='images/bg4.png' title="小清新" class="iconfont icon-qingxin theme-toggle"></a>
+		  		<a href="JavaScript:" data-bgimg='images/bg5.png' title="小星星" class="iconfont icon-QCC- theme-toggle"></a>
+		  		<a href="JavaScript:" data-bgimg='images/bg1.jpg' title="小方格" class="iconfont icon-gezi theme-toggle"></a>
+		  	</div>
+		  </div>
+		</div>
+		<!--主题切换结束-->
+		<!--返回顶部开始-->
+	  	<div data-am-widget="gotop" class="am-gotop am-gotop-default">
+	    	<a href="#top" title="回到顶部">
+	      	  <span class="am-gotop-title">
+	      	  	<i class="iconfont icon-dingbu"></i>
+	      	  </span>
+	    	</a>
+	  	</div>
+		<!--返回顶部结束-->
+		<!--小工具部分结束-->
+		<!--js-->
+		<script type="text/javascript" src="js/jquery-3.3.1.js"></script>
+		<script type="text/javascript" src="js/amazeui.min.js"></script>
+		<script type="text/javascript" src="js/tools.js"></script>
+		<script type="text/javascript" src="js/anime.min.js"></script>
+		<script src="layer/layer.js"></script>
+		<script type="text/javascript" src="js/public.js"></script>
+	</body>
+	<script>
+		window.addEventListener('load', function(){
+			new Load(['index'])
+		})
+	</script>
+</html>

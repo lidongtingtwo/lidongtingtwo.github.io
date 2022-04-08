@@ -1,0 +1,351 @@
+/*全局通用样式*/
+.nprogress-bar{
+    background: #F37B1D !important;
+    height: 3px !important;
+}
+//音乐进度条调整
+.control{
+    transform: translateY(12px) !important;
+}
+.nprogress-spinner-icon{
+    border-top-color: #F37B1D !important;
+    border-left-color: #F37B1D !important;
+}
+*{
+    font: 16px/1.4em "Microsoft Yahei",tahoma,arial,"Hiragino Sans GB";
+}
+body{
+    background-attachment: fixed !important;
+}
+.user-select{
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+.icon {
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.15em;
+  fill: currentColor;
+  overflow: hidden;
+}
+.white{
+    color: #fff;
+}
+.c6{
+    color: #666666 !important;
+}
+.c3{
+    color: #333 !important;
+}
+.absoluteCenter(){
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+/*头部开始*/
+.header:extend(.white){
+    position: relative;
+    width: 100%;
+    height: 350px;
+    background: linear-gradient(to top right,rgb(127, 129, 214),rgb(137, 177, 230),rgb(153, 223, 226));
+    .header-top{
+//      overflow: hidden;
+        padding: 0 50px;
+        height: 100px;
+        transition: all 0.3s;
+        .am-btn-primary{
+            display: none;
+        }
+        .topLogo{
+            width: 300px;
+            height: 300px;
+            margin-top: -80px;
+            display: inline-block;
+            color: #fff;
+            font-size: 200px;
+            img{
+                width: 100%;
+            }
+        }
+    }
+    .header-center{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-direction: column;
+        .user-logo{
+            cursor: pointer;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+        }
+        p:nth-of-type(1){
+            font-weight: bold;
+            font-size: 22px;
+        }
+        p{
+          margin: 0;
+          padding: 0;
+          margin-top: 10px; 
+        }
+    }
+    .header-bottom{
+        z-index: 9999;
+        position: relative;
+        margin-top: 20px;
+        width: 100%;
+        transition: background-color 0.3s;
+        height: 50px;
+        .menu-logo{
+            opacity: 0;
+            position: absolute;
+            top: 50%;
+            left: 50px;
+            transform: translateY(-50%);
+        }
+        >ul{
+            width: 70%;
+            height: 100%;
+            list-style: none;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            padding-left: 0;
+            li{
+                flex: 1;
+                text-align: center;
+                a:extend(.white){
+                    line-height: 50px;
+                    display: block;
+                    width: 100%;
+                    height: 80%;
+                    font-size: 22px;
+                }
+                .selected{
+                    display: block;
+                    width: 30%;
+                    height: 20%;
+                    margin: 0 auto;
+                    span{
+                        display: block;
+                        width: 0%;
+                        height: 100%;
+                        background: #ff9900;
+                        transition: width 0.3s ease;
+                    }
+                }
+                &:hover .selected span{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+/*头部结束*/
+/*上方介绍开始*/
+.content{
+    width: 100%;
+    margin: 0 auto;
+    #getmore{
+        width: 60%;
+        padding-top: 50px;
+        padding-bottom: 20px;
+        margin: 0 auto;
+        background: rgba(255,255,255,0.7);
+        border-bottom: 1px solid #ddd;
+        .load-more-btn{
+            &:hover{
+                border: 1px solid rgb(254, 150, 0);
+                color: rgb(254, 150, 0);
+            }
+            width: 200px;
+            height: 40px;
+            text-align: center;
+            border: 1px solid #d6d6d6;
+            color: #adadad;
+            border-radius:50px;
+            line-height: 40px;
+            margin: 0 auto;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+    }
+}
+.background-box{
+    width: 60%;
+    background: rgba(255,255,255,0.7);
+    padding-top: 20px;
+    margin: 0 auto;
+    .introduce{
+        width: 100%;
+        .welcome{
+            border-radius: 8px;
+            border: 1px dashed #ccc;
+            padding: 10px;
+            width: 100%;
+            .icon-huanying{
+                font-size: 24px;
+            }
+        }
+        p:nth-of-type(2){
+            i{
+                font-size: 30px;
+            }
+            border-bottom:1px dashed #ccc;
+            color: #666;
+            padding: 10px;
+            width: 100%;
+            font-size: 24px;
+        }
+    }
+    
+}
+/*上方介绍结束*/
+/*中间内容开始*/
+#main-container{
+    width: 100%;
+}
+.article:extend(.user-select){
+    overflow: hidden;
+    width: 100%;
+    border-radius: 10px;
+    height: 300px;
+    -webkit-box-shadow: 0px 2px 18px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0px 2px 18px rgba(0,0,0,0.2);
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    .article-left{
+        padding-top: 10px;
+        padding-left: 20px;
+        padding-right: 30px;
+        width: 45%;
+        height: 100%;
+        h2 a:extend(.c3){
+            font-size: 30px;
+            transition:color 0.3s;
+            &:hover{
+                color: rgb(0, 108, 255) !important;
+            }
+        }
+        p:nth-of-type(3) a i:extend(.c6){
+            transition:color 0.3s;
+            font-size: 30px;
+            &:hover{
+                color: rgb(0, 108, 255) !important;
+            }
+        }
+        .main-content{
+            overflow : hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+        }
+    }
+    .article-right{
+        overflow: hidden;
+        width: 55%;
+        height: 100%;
+        &:hover img{
+            transform: scale(1.2);
+        }
+        img{
+            transition: all 0.8s;
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+.article:nth-of-type(odd){
+    flex-direction: row-reverse;
+}
+.article:last-child{
+    margin-bottom: 0;
+}
+/*中间内容结束*/
+/*底部开始*/
+.footer{
+    width: 60%;
+    margin: 0 auto;
+    background: none;
+    text-align: center;
+    p:extend(.c6){
+        margin-bottom: 0;
+        line-height: 100px;
+    }
+}
+/*底部结束*/
+/*工具开始*/
+.am-dropdown-up{
+    position: fixed;
+    right: 80px;
+    bottom: 30px;
+    .am-btn{
+        background: none;
+        border: none;
+        color: #666666;
+        i{
+            font-size: 25px;
+        }
+    }
+    .am-dropdown-content{
+        width: 300px;
+        height: 100px;
+        border: none;
+        -webkit-box-shadow: 0 1px 18px #ddd;
+        -moz-box-shadow: 0 1px 18px #ddd;
+        &:after,&:before{
+            left: 50%;
+        }
+        left: -82% !important; 
+       .theme-box{
+            width: 80%;
+            height: 100%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            a{
+                &:hover{
+                    color: rgb(255, 204, 51);
+                }
+                display: inline-block;
+                text-align: center;
+                width: 25%;
+                color: #666;
+                font-size:24px;
+            }
+       }
+    }
+}
+.am-btn-danger.am-active, .am-btn-danger:active, .am-dropdown.am-active .am-btn-danger.am-dropdown-toggle{
+        background: none !important;
+        color: rgb(143, 193, 229);
+}
+.am-gotop-default{
+    display: none;
+    position: fixed;
+    right: 110px;
+    bottom: 170px;
+    z-index: 99;
+    a{
+        padding: 0;
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+        border: 0;
+        outline: 0;
+        background-color: #fff;
+        color: #404040;
+        cursor: pointer;
+        border-radius: 10px;
+        border-radius: 12px;
+        box-shadow: 0 0 2px 0 rgba(0,0,0,.12), 0 2px 2px 0 rgba(0,0,0,.24);
+        transition: box-shadow .2s ease;
+    }
+}
+/*工具结束*/
