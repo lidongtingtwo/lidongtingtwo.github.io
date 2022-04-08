@@ -1,0 +1,112 @@
+*{
+    font: 16px/1.5em "PingFang",tahoma,arial,"Hiragino Sans GB";
+}
+@font-face {
+    /* font-properties */
+    font-family: PingFang;
+    src:url('../fontfamily/PingFang Light.ttf'),  
+    url('../fontfamily/PingFang Regular.ttf'); /* IE9 */
+}
+html,body{
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+/*内容开始*/
+.main-container{
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    .main-left{
+        transition: flex-basis 0.3s;
+        height: 100%;
+        flex-basis: 60%;
+        background: url(../images/loginBg.jpg) no-repeat;
+        background-size: cover;
+        .introduce-box{
+            width: 80%;
+            margin: 0 auto;
+            p:nth-of-type(1){
+                i{
+                    display: block;
+                    font-size: 300px;
+                    color: #fff;
+                    vertical-align: top;
+                }
+            }
+            p{
+                font-size: 22px;
+                font-weight: 600;
+                color: #fff;
+                i{
+                    font-size: 20px;
+                    margin-right: 15px;
+                }
+            }
+        }
+    }
+    .main-right{
+        transition: flex-basis 0.3s;
+        height: 100%;
+        flex-basis: 40%;
+        .logo{
+            display: none;
+        }
+    }
+}
+legend{
+    color: #555;
+    font-size: 30px;
+    padding-bottom: 40px !important;
+}
+#vld-tooltip {
+    position: absolute;
+    z-index: 1000;
+    padding: 5px 10px;
+    background: #F37B1D;
+    min-width: 150px;
+    color: #fff;
+    transition: all 0.15s;
+    box-shadow: 0 0 5px rgba(0,0,0,.15);
+    display: none;
+}
+input{
+    border-radius:5px !important;
+    height: 60px;
+}
+.am-btn-secondary{
+    color: #fff;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 60px;
+    border-radius: 5px;
+    width:75%;
+    background-color: #3e8ef7;
+    border-color: #3e8ef7;
+    box-shadow: none;
+}
+#vld-tooltip:before {
+    position: absolute;
+    top: -8px;
+    left: 50%;
+    width: 0;
+    height: 0;
+    margin-left: -8px;
+    content: "";
+    border-width: 0 8px 8px;
+    border-color: transparent transparent #F37B1D;
+    border-style: none inset solid;
+}
+#form-with-tooltip{
+    position: relative;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 0 50px;
+}
+/*内容结束*/

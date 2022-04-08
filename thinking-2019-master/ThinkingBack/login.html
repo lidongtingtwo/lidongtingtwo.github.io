@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="font/iconfont.css" />
+		<script src="font/iconfont.js"></script>
+		<script type="text/javascript" src="js/jquery-3.3.1.js"></script>
+		<link rel="stylesheet" href="css/amazeui.min.css" />
+		<script type="text/javascript" src="js/amazeui.min.js"></script>
+		<script type="text/javascript" src="js/tools.js"></script>
+		<script type="text/javascript" src="js/anime.min.js"></script>
+		<link rel="icon" href="favicon.ico" type="image/x-icon"/>
+		<link rel="stylesheet" href="css/login.css" />
+		<link rel="stylesheet" href="css/login-pad.css" media="screen and (max-width:1200px)" />
+		<link rel="stylesheet" href="css/login-phone.css" media="screen and (max-width:768px)" />
+		<title>Thinking管理员登录</title>
+	</head>
+	<body>
+		<!--内容开始-->
+		<!--内容左侧开始-->
+		<div class="main-container">
+			<div class="main-left">
+				<div class="introduce-box" data-am-scrollspy="{animation:'slide-left',repeat:false}">
+					<p><img src="images/toplogo.svg" class="logo-svg" alt="" /></p>
+					<p><i class="iconfont icon-checked"></i>记录生活，在自己的每一天上留下思考的划痕。</p>
+					<p><i class="iconfont icon-checked"></i>整理思路，固化知识，获得更多更好的想法。</p>
+					<p><i class="iconfont icon-checked"></i>分享，将自己的想法、经验与人分享。</p>
+				</div>
+			</div>
+			<div class="main-right" data-am-scrollspy="{animation:'fade',repeat:false}">
+				<div class="top-logo-box">
+					<img src="images/logo.svg" class="logo" alt=""/>
+				</div>
+				<form action="" method="" class="am-form" id="form-with-tooltip">
+				  <fieldset>
+				    <legend>登录 Thinking</legend>
+				    <div class="am-form-group">
+				      <label for="doc-vld-name-2-0">用户名：</label>
+				      <input type="text" autocomplete="off" id="doc-vld-name-2-0" minlength="6"
+				             placeholder="输入用户名（至少 6 个字符）" required/>
+				    </div>
+				    <div class="am-form-group">
+				      <label for="doc-vld-pwd-1-0">密码：</label>
+				      <input type="password" id="doc-vld-pwd-1-0" minlength="6" placeholder="输入6位及以上的密码" required data-foolish-msg="快把密码交出来！"/>
+				    </div>
+				    <button class="am-btn am-btn-secondary" type="submit">提交</button>
+				  </fieldset>
+				</form>
+			</div>
+		</div>
+		<!--内容左侧结束-->
+		<!--内容结束-->
+		<script>
+			$(function() {
+				  var $form = $('#form-with-tooltip');
+				  var $tooltip = $('<div id="vld-tooltip">提示信息！</div>');
+				  $tooltip.appendTo(document.body);
+				
+				  $form.validator();
+				
+				  var validator = $form.data('amui.validator');
+				
+				  $form.on('focusin focusout', '.am-form-error input', function(e) {
+				    if (e.type === 'focusin') {
+				      var $this = $(this);
+				      var offset = $this.offset();
+				      var msg = $this.data('foolishMsg') || validator.getValidationMessage($this.data('validity'));
+				
+				      $tooltip.text(msg).show().css({
+				        left: offset.left + 10,
+				        top: offset.top + $(this).outerHeight() + 10
+				      });
+				    } else {
+				      $tooltip.hide();
+				    }
+				  });
+			});
+		</script>
+	</body>
+</html>

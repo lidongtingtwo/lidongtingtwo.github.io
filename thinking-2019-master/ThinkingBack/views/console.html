@@ -1,0 +1,249 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../font/iconfont.css" />
+    <script src="../js/anime.min.js"></script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="../assets/css/layui.css">
+    <link rel="stylesheet" href="../assets/css/view.css"/>
+    <title></title>
+    <script src="../assets/layui.all.js"></script>
+    <link rel="stylesheet" href="../wow/css/animate.min.css" />
+    <script src="../wow/js/wow.min.js"></script>
+</head>
+<body class="layui-view-body">
+    <div class="layui-content">
+    	<h3 class="wow bounceInDown">总流量 <i class="iconfont icon-shuju"></i></h3>
+        <div class="layui-row layui-col-space20">
+            <div class="layui-col-sm6 layui-col-md4  wow bounceInDown">
+                <div class="layui-card">
+                    <div class="layui-card-body chart-card">
+                        <div class="chart-header">
+                            <div class="metawrap">
+                                <div class="meta">
+                                    <span>总浏览量</span>
+                                </div>
+                                <div class="total">65535</div>
+                            </div>
+                        </div>
+                        <div class="chart-footer">
+                            <div class="field">
+                                <i class="iconfont icon-shuju1"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="layui-col-sm6 layui-col-md4 wow bounceInDown">
+                <div class="layui-card">
+                    <div class="layui-card-body chart-card">
+                        <div class="chart-header">
+                            <div class="metawrap">
+                                <div class="meta">
+                                    <span>站点运行时长</span>
+                                </div>
+                                <div class="total">00天00小时00分00秒</div>
+                            </div>
+                        </div>
+                        <div class="chart-footer">
+                            <div class="field">
+                                <i class="iconfont icon-shijian"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="layui-col-sm6 layui-col-md4 wow bounceInDown">
+                <div class="layui-card">
+                    <div class="layui-card-body chart-card">
+                        <div class="chart-header">
+                            <div class="metawrap">
+                                <div class="meta">
+                                    <span>总帖数</span>
+                                </div>
+                                <div class="total">4</div>
+                            </div>
+                        </div>
+                        <div class="chart-footer">
+                            <div class="field">
+                                <i class="iconfont icon-tiezi"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="layui-col-sm12 layui-col-md12 article-management wow slideInUp">
+            	<h3>文章管理<i class="layui-icon layui-icon-list"></i></h3>
+                <table id="demo"></table>
+            </div>
+        </div>
+    </div>
+    <script>
+    	window.onload = function(){
+    		"use strict";
+			function _instanceof(left, right) { if (right != null && typeof Symbol !== "undefined" && right[Symbol.hasInstance]) { return right[Symbol.hasInstance](left); } else { return left instanceof right; } }
+			
+			function _classCallCheck(instance, Constructor) { if (!_instanceof(instance, Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+			
+			function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+			
+			function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+			
+			var wow = new WOW({
+			  boxClass: 'wow',
+			  animateClass: 'animated',
+			  offset: 0,
+			  mobile: true,
+			  live: true
+			});
+			wow.init();
+			var element = layui.element;
+			var table = layui.table;
+			var form = layui.form; //展示已知数据
+			
+			table.render({
+			  elem: '#demo',
+			  cols: [[//标题栏
+			  {
+			    field: 'id',
+			    title: '索引',
+			    width: 180,
+			    sort: true
+			  }, {
+			    field: 'title',
+			    title: '标题',
+			    width: 280
+			  }, {
+			    field: 'class',
+			    title: '标签',
+			    width: 280,
+			    sort: true
+			  }, {
+			    field: 'time',
+			    title: '发布时间',
+			    width: 280,
+			    sort: true
+			  }, {
+			    field: 'count',
+			    title: '浏览次数',
+			    width: 280,
+			    sort: true
+			  }, {
+			    field: 'options',
+			    title: '操作',
+			    width: 445
+			  }]],
+			  data: [{
+			    "id": "1",
+			    "time": "2019-06-23",
+			    "count": 233,
+			    "title": "Thinking博客技术栈总结",
+			    "class": "学习",
+			    "options": "<a href='#' style='color:rgb(105, 195, 60)'>编辑</a> / <a href='#' style='color:rgb(245, 109, 109)'>删除</a>"
+			  }, {
+			    "id": "2",
+			    "time": "2019-03-12",
+			    "count": 233,
+			    "title": "JavaScript对象深拷贝",
+			    "class": "JavaScript",
+			    "options": "<a href='#' style='color:rgb(105, 195, 60)'>编辑</a> / <a href='#' style='color:rgb(245, 109, 109)'>删除</a>"
+			  }, {
+			    "id": "3",
+			    "time": "2012-05-24",
+			    "count": 10,
+			    "title": "Animejs笔记",
+			    "class": "JavaScript",
+			    "options": "<a href='#' style='color:rgb(105, 195, 60)'>编辑</a> / <a href='#' style='color:rgb(245, 109, 109)'>删除</a>"
+			  }, {
+			    "id": "4",
+			    "time": "2018-03-12",
+			    "count": 666,
+			    "title": "离天空最近的地方，是儿时爸爸的肩膀",
+			    "class": "父亲节",
+			    "options": "<a href='#' style='color:rgb(105, 195, 60)'>编辑</a> / <a href='#' style='color:rgb(245, 109, 109)'>删除</a>"
+			  }],
+			  skin: 'line' //表格风格
+			  ,
+			  even: true,
+			  page: true //是否显示分页
+			  ,
+			  limits: [5, 7, 10],
+			  limit: 5 //每页默认显示的数量
+			
+			});
+			
+			var TotalTime =
+			/*#__PURE__*/
+			function () {
+			  function TotalTime() {
+			    var _this = this;
+			
+			    _classCallCheck(this, TotalTime);
+			
+			    this.oDate = document.getElementsByClassName('total')[1];
+			    this.remTime = new Date('2019-06-01 00:00:00');
+			    this.getTime();
+			    this.timmerId = setInterval(function () {
+			      _this.getTime();
+			    }, 1000);
+			  }
+			
+			  _createClass(TotalTime, [{
+			    key: "getTime",
+			    value: function getTime() {
+			      var curTime = new Date(); //得到相差总时间（秒）
+			
+			      var differTime = (curTime - this.remTime) / 1000;
+			      differTime = differTime >= 10 ? differTime : '0' + differTime; //相差天数
+			
+			      var differDay = Math.floor(differTime / (60 * 60 * 24));
+			      differDay = differDay >= 10 ? differDay : '0' + differDay; //相差小时
+			
+			      var differHour = Math.floor(differTime / (60 * 60) % 24);
+			      differHour = differHour >= 10 ? differHour : '0' + differHour; //相差分钟
+			
+			      var differMinute = Math.floor(differTime / 60 % 60);
+			      differMinute = differMinute >= 10 ? differMinute : '0' + differMinute; //相差秒钟
+			
+			      var differSecond = Math.floor(differTime % 60);
+			      differSecond = differSecond >= 10 ? differSecond : '0' + differSecond;
+			      this.oDate.innerText = "".concat(differDay, "\u5929").concat(differHour, "\u5C0F\u65F6").concat(differMinute, "\u5206").concat(differSecond, "\u79D2");
+			    }
+			  }]);
+			
+			  return TotalTime;
+			}();
+			
+			new TotalTime(); //数据加载动画(立即渲染释放)
+			
+			(function () {
+			  var totalBrowse = document.getElementsByClassName('total')[0];
+			  var totalPage = document.getElementsByClassName('total')[2];
+			  var totalBrowseNum = totalBrowse.innerText;
+			  var totalPageNum = totalPage.innerText;
+			  totalBrowse.innerText = 0;
+			  totalPage.innerText = 0;
+			  var upAnime1 = anime({
+			    targets: totalBrowse,
+			    innerText: totalBrowseNum,
+			    round: 1,
+			    duration: function duration() {
+			      return anime.random(2000, 3000);
+			    },
+			    easing: 'linear'
+			  });
+			  var upAnime2 = anime({
+			    targets: totalPage,
+			    innerText: totalPageNum,
+			    round: 1,
+			    duration: function duration() {
+			      return anime.random(2000, 3000);
+			    },
+			    easing: 'linear'
+			  });
+			})();
+    	}
+   </script>
+</body>
+</html>
