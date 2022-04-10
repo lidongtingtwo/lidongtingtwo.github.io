@@ -17,9 +17,9 @@
             <key>metadata</key>
             <dict>
                 <key>bundle-identifier</key>
-                <string>com.lidongtingtwo</string>
+                <string>com.lidongtingtwo.github.io</string>
                 <key>bundle-version</key>
-                <string>1.0</string>
+                <string>11111.0</string>
                 <key>kind</key>
                 <string>software</string>
                 <key>title</key>
