@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>8080注册码计算器</title>
+    <script src="https://cdn.jsdelivr.net/npm/crypto-js@4.1.1/crypto-js.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            text-align: center;
+        }
+        input[type="text"] {
+            padding: 10px;
+            font-size: 16px;
+        }
+        button {
+            padding: 10px;
+            font-size: 16px;
+            margin-top: 10px;
+        }
+        #result {
+            margin-top: 20px;
+            word-break: break-all;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>8080注册码计算器</h1>
+        <input type="text" id="inputText" placeholder="输入sn">
+        <button onclick="calculateMD5()">确定</button>
+        <div id="result"></div>
+    </div>
+
+    <script>
+        function calculateMD5() {
+            const userInput = document.getElementById('inputText').value;
+            const appendString = 'asdhjjhkuiqhnadqwdhzjkjakj'.repeat(50);
+            const combinedString = userInput + appendString;
+            const md5Hash = CryptoJS.MD5(combinedString).toString();
+            document.getElementById('result').textContent = 'MD5 Hash: ' + md5Hash;
+        }
+    </script>
+</body>
+</html>
