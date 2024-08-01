@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mfx32计算器</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        .container {
+            display: inline-block;
+            text-align: left;
+            border: 1px solid #ccc;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        #result {
+            margin-top: 15px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>mfx32计算器</h1>
+		<p>算法:将imei后六位交换第三四位后+329并x5</p>
+        <input type="text" id="inputField" maxlength="15" placeholder="请输入15位imei">
+        <button onclick="calculate()">计算</button>
+        <div id="result"></div>
+    </div>
+
+    <script>
+        function calculate() {
+            const input = document.getElementById('inputField').value;
+
+            // 验证输入长度
+            if (input.length !== 15) {
+                document.getElementById('result').innerText = '请输入15位imei';
+                return;
+            }
+
+            // 获取输入框的后六位
+            const lastSixChars = input.slice(-6);
+
+            // 交换第三和第四位
+            let swapped = lastSixChars.split('');
+            [swapped[2], swapped[3]] = [swapped[3], swapped[2]];
+            const modifiedString = swapped.join('');
+
+            // 转换为数字并进行计算
+            const number = parseInt(modifiedString, 10);
+            if (isNaN(number)) {
+                document.getElementById('result').innerText = '无法转换为数字';
+                return;
+            }
+
+            const result = (number + 329) * 5;
+
+            // 显示结果
+            document.getElementById('result').innerText = '切卡密码: ' + result;
+        }
+    </script>
+</body>
+</html>
