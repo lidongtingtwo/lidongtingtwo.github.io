@@ -1,0 +1,148 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HG2017汉化版下载</title>
+    <style>
+        body {
+            font-family: 'Microsoft YaHei', sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: #333;
+        }
+        
+        .container {
+            width: 90%;
+            max-width: 800px;
+            margin: 40px auto;
+            text-align: center;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+        
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 30px;
+            font-size: 28px;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+        }
+        
+        .logo {
+            margin: 30px 0;
+            width: 150px;
+            height: auto;
+            transition: transform 0.3s ease;
+        }
+        
+        .logo:hover {
+            transform: scale(1.05);
+        }
+        
+        .download-btn {
+            display: block;
+            width: 100%;
+            max-width: 400px;
+            margin: 15px auto;
+            padding: 15px;
+            font-size: 18px;
+            color: white;
+            background: linear-gradient(to right, #3498db, #2980b9);
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            text-decoration: none;
+        }
+        
+        .github-btn {
+            background: linear-gradient(to right, #333, #222);
+        }
+        
+        .download-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+        
+        .blue-btn:hover {
+            background: linear-gradient(to right, #2980b9, #3498db);
+        }
+        
+        .black-btn:hover {
+            background: linear-gradient(to right, #222, #333);
+        }
+        
+        .note {
+            margin: 20px 0;
+            color: #7f8c8d;
+            font-size: 14px;
+        }
+        
+        .stats {
+            margin-top: 40px;
+            font-size: 14px;
+            color: #7f8c8d;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+        }
+        
+        .stat-item {
+            background-color: #f8f9fa;
+            padding: 10px 15px;
+            border-radius: 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+        
+        @media (max-width: 600px) {
+            .container {
+                width: 95%;
+                padding: 20px;
+            }
+            
+            h1 {
+                font-size: 24px;
+            }
+            
+            .download-btn {
+                padding: 12px;
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>HG2017汉化版下载</h1>
+        
+        <img src="http://lidongtingtwo.github.io/HG2017/hg.webp" alt="你是一个一个图标啊" class="logo">
+        
+        <a href="https://www.123684.com/s/3nF6Vv-xgNnh" class="download-btn blue-btn">123盘下载</a>
+        <a href="https://www.123912.com/s/3nF6Vv-xgNnh" class="download-btn blue-btn">123盘备用下载</a>
+        <a href="https://pan.huang1111.cn/s/gg4YVfQ" class="download-btn blue-btn">huang1111盘下载</a>
+        
+        <div class="note">发现有翻译问题可以去GitHub提交issue或qq2901291616</div>
+        
+        <a href="https://github.com/lidongtingtwo/HGzh_CN/" class="download-btn github-btn black-btn">GitHub</a>
+        
+        <div class="stats">
+            <div class="stat-item">本站总访问量 <span id="busuanzi_site_pv">加载中...</span> 次</div>
+            <div class="stat-item">本页总访客数 <span id="busuanzi_page_uv">加载中...</span> 人</div>
+            <div class="stat-item">本站今日访问量 <span id="busuanzi_today_site_pv">加载中...</span> 次</div>
+            <div class="stat-item">本页今日访客数 <span id="busuanzi_today_page_uv">加载中...</span> 人</div>
+        </div>
+    </div>
+    
+    <script src="//api.busuanzi.cc/static/3.6.9/busuanzi.min.js" defer></script>
+</body>
+</html>
